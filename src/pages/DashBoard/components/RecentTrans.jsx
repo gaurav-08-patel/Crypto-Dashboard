@@ -73,7 +73,7 @@ const RecentTrans = () => {
                         )}
                     </article>
                 ))}
-                <Link to="/transactions">
+                <Link to="/transactions" className="w-full">
                     <Button className="text-black bg-gray-200 cursor-pointer hover:bg-gray-200">
                         {" "}
                         View all{" "}
