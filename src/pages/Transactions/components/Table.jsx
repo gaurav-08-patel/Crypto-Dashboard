@@ -88,30 +88,30 @@ const TableContainer = () => {
       <Table className="min-w-[650px]">
         <TableHeader>
           <TableRow>
-            <TableHead className="text-gray-400">ID</TableHead>
-            <TableHead className="text-gray-400">Date & Time</TableHead>
-            <TableHead className="text-gray-400">Type</TableHead>
-            <TableHead className="text-gray-400">Amount</TableHead>
-            <TableHead className="text-gray-400">Status</TableHead>
+            <TableHead className="text-gray-400 max-xsm:text-xs">ID</TableHead>
+            <TableHead className="text-gray-400 max-xsm:text-xs">Date & Time</TableHead>
+            <TableHead className="text-gray-400 max-xsm:text-xs">Type</TableHead>
+            <TableHead className="text-gray-400 max-xsm:text-xs">Amount</TableHead>
+            <TableHead className="text-gray-400 max-xsm:text-xs">Status</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
           {tableData.map((data) => (
             <TableRow key={data.id}>
-              <TableCell className="font-medium  py-5 ">{data.id}</TableCell>
-              <TableCell className="flex flex-col justify-center  py-5 ">
+              <TableCell className="font-medium  py-5  max-xsm:text-xs">{data.id}</TableCell>
+              <TableCell className="flex flex-col justify-center  py-5  max-xsm:text-xs">
                 <span className="font-medium">{data.date}</span>
                 <span className="text-[12px] text-gray-500">{data.time}</span>
               </TableCell>
-              <TableCell className="py-5">
+              <TableCell className="py-5 max-xsm:text-xs">
                 <span className="font-medium">{data.type.name}</span>
                 <br />
                 <span className="text-[12px] text-gray-500">
                   {data.type.tag || ""}
                 </span>
               </TableCell>
-              <TableCell className="py-5 font-medium">{data.amount}</TableCell>
-              <TableCell className="py-5 ">
+              <TableCell className="py-5 font-medium max-xsm:text-xs">{data.amount}</TableCell>
+              <TableCell className="py-5  max-xsm:text-xs">
                 <span
                   style={{ backgroundColor: statusColor[data.status] }}
                   className=" p-1.5 rounded-xl text-white"

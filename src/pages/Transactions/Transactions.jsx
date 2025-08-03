@@ -19,7 +19,7 @@ const Transactions = () => {
                   <TabsTrigger
                     key={item}
                     value={item}
-                    className="mx-4 min-w-3 max-md:min-w-1 max-md:mx-1 max-md:text-sm  text-gray-400 data-[state=active]:text-black data-[state=active]:after:rounded-2xl  cursor-pointer relative data-[state=active]:shadow-none data-[state=active]:after:content-[''] data-[state=active]:after:absolute data-[state=active]:after:-bottom-[13px] data-[state=active]:after:w-full data-[state=active]:after:h-1 data-[state=active]:after:bg-[#5F00D9]  "
+                    className="max-xsm:text-xs mx-4 min-w-3 max-md:min-w-1 max-md:mx-1 max-md:text-sm  text-gray-400 data-[state=active]:text-black data-[state=active]:after:rounded-2xl  cursor-pointer relative data-[state=active]:shadow-none data-[state=active]:after:content-[''] data-[state=active]:after:absolute data-[state=active]:after:-bottom-[13px] data-[state=active]:after:w-full data-[state=active]:after:h-1 data-[state=active]:after:bg-[#5F00D9]  "
                   >
                     {item}
                   </TabsTrigger>
@@ -27,7 +27,7 @@ const Transactions = () => {
               </TabsList>
 
               <Input
-                className=" w-[200px] max-md:w-[220px]"
+                className=" w-[200px] max-md:w-[220px] max-xsm:text-xs"
                 placeholder="Search by ID or destination"
               />
             </div>
