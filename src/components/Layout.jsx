@@ -4,7 +4,7 @@ import Header from "./Header";
 
 export default function Layout({ children, title }) {
   return (
-    <SidebarProvider className="w-[100vw]">
+    <SidebarProvider className="w-full">
       <AppSidebar />
       <main className="w-full  max-w-[86rem] bg-[#F3F3F7]  flex flex-col">
         <Header title={title} />
