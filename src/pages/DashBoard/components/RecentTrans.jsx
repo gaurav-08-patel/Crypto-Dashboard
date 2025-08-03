@@ -35,7 +35,7 @@ const RecentTrans = () => {
             >
                 Recent Transactions
             </h1>
-            <section className="flex flex-col gap-2 pt-4">
+            <section className="flex flex-col gap-2 pt-4 w-full">
                 {transactions.map((trans) => (
                     <article key={trans.id}>
                         <div className="p-2 flex justify-between items-center">
@@ -53,8 +53,7 @@ const RecentTrans = () => {
                                 </span>
                                 <span>
                                     <h1 className="font-medium max-md:text-[14px]">
-                                        {" "}
-                                        {trans.text}{" "}
+                                        {trans.text}
                                     </h1>
                                     <p className="text-[12px] text-gray-500 max-md:text-[10px]">
                                         {trans.time}
@@ -73,12 +72,12 @@ const RecentTrans = () => {
                         )}
                     </article>
                 ))}
-                <Link to="/transactions" className="w-full">
-                    <Button className="text-black bg-gray-200 cursor-pointer hover:bg-gray-200">
-                        {" "}
-                        View all{" "}
-                    </Button>
-                </Link>
+
+                <Button className="text-black bg-gray-200 cursor-pointer hover:bg-gray-200">
+                    <Link to="/transactions" className="w-full">
+                        View all
+                    </Link>
+                </Button>
             </section>
         </div>
     );
